@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0%;
+  margin: 0%;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background: url(../image/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* css navbar  */
+.navbar .navbar-nav .btn {
+  background-color: #a261af;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+/* css banner */
+.banner-content {
+  height: 300px;
+  align-items: center;
+  text-align: center;
+  border: solid black;
+}
+.home-text .btn {
+  background-color: transparent;
+  border: 1px solid #aaa;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+.home-text .btn:hover {
+  background-color: #9a5ca7;
+  transform: scale(1.2);
+  color: white;
+}
+.home-text .text-uppercase {
+  color: #a261af;
+}
+.home-text span {
+  color: #9a5ca7;
+  font-weight: bolder;
+}
+/* css untuk semua garis bawah */
+hr {
+  width: 80px;
+  border: 3px solid #252525;
+  margin: auto;
+}
+
+.text-content {
+  font-size: 14px;
+}
+.home-text .welcome {
+  font-family: "Pacifico", cursive;
+}
+
+.service-item {
+  height: 350px;
+}
+
+.info-panel {
+  padding: 30px;
+}
+
+.info-panel img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* css untuk support */
+.support .container-fluid {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.support .logo {
+  width: 50%;
+  align-items: center;
+}
+
+/* css untuk icon link sosial media */
+.card-body .card-link {
+  font-size: 30px;
+  color: #bd6777;
+}
+
+.carousel-caption .sosial-link {
+  margin: auto;
+  width: fit-content;
+  color: #9a5ca7;
+}
+
+form .btn-primary:hover {
+  background-color: #9a5ca7;
+  transform: scale(1.2);
+}
+
+.contact-form .btn {
+  background-color: #a261af;
+  border: none;
+}
+
+.contact-form .btn:hover {
+  background-color: #9a5ca7;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* css buat typing js */
+#kampusit {
+  color: #a261af;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 479px) {
+  .navbar .navbar-brand {
+    display: none;
+  }
+  .home-text {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 579px), (max-width: 1200px) {
+  .navbar .navbar-nav .btn:hover {
+    background-color: #9a5ca7;
+    color: white;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    color: #a261af;
+    transform: scale(1.2);
+  }
+}

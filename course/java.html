@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- link bootrstrap -->
+    <link rel="stylesheet" href="../bs5/css/bootstrap.min.css"/>
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/all.css"/>
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>course html</title>
+</head>
+<body>
+<!-- membuat sidebar -->
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-transparent">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 sidebar">
+                <a href="../index.html" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <img src="../image/logoBrand.png" class="d-none d-sm-inline " alt="logoBrand" width="190" height="70"/> </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mt-5"
+                    id="menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link align-center px-0"> <i class="fas fa-home fs-3"></i>
+                            <span class="ms-1 d-none d-sm-inline">Home</span> </a>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-center"> <i
+                                class="fas fa-book fs-3"></i> <span class="ms-2 d-none d-sm-inline">Learning</span> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="#materi1" class="nav-link px-0"> <span class="d-none d-sm-inline">Materi JAVA </span>1</a>
+                            </li>
+                            <li>
+                                <a href="#materi2" class="nav-link px-0"> <span class="d-none d-sm-inline">Materi JAVA </span>2</a>
+                            </li>
+                             <li>
+                                <a href="#" onclick="alert3()" class="nav-link px-0"> <span class="d-none d-sm-inline">Materi JAVA </span>3</a>
+                            </li>
+                             <li>
+                                <a href="#" onclick="alert4()" class="nav-link px-0"> <span class="d-none d-sm-inline">Materi JAVA </span>4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link align-center px-0" href="../course/java.html"> <i class="fab fa-js-square fs-3"></i>
+                            <span class="ms-1 d-none d-sm-inline">JavaScript</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link align-center px-0" href="../course/html.html"> <i class="fab fa-html5 fs-3"></i>
+                            <span class="ms-1 d-none d-sm-inline">HTML</span> </a>
+                    </li>
+                </ul>
+                <hr/>
+				<script>
+				function alert3 (){
+					alert("Maaf materi Java 3 saat ini belum tersedia. Terima kasih!");
+					}
+				function alert4 (){
+					alert("Maaf materi Java 4 saat ini belum tersedia. Terima kasih!");
+					}
+				</script>
+            </div>
+        </div>
+
+        <!--  konten side kanan-->
+        <div class="col py-3 sidebar-kanan bg-transparent ms-3">
+            <h3 class="fw-bold mt-5 mb-3" id="materi1">Pengenalan Java untuk Pemula </h3>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-12 mb-3 mt-3">
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XzOwuNX3dIE"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+            <p> Jadi kamu memutuskan untuk belajar Java..</p>
+            <p>Bagus. 👍</p>
+            <p> Kamu harus simak artikel ini sampai selesai agar tetap termotivasi untuk balajar Java hingga menjadi
+                ahli Java.</p>
+            <p>Pada artikel ini, kita akan membahas:</p>
+            <p> “Apa itu Java?”</p>
+            <p> “Asal usul Java dari mana?”</p>
+            <p>“Mengapa sih belajar Java?”</p>
+            <p>“Bagaimana Cara mulai Belajar Java?”</p>
+
+            <a class="btn-collapse px-3 py-2 rounded fw-bold" data-bs-toggle="collapse" href="#materi1-1" role="button" aria-expanded="false"
+               aria-controls="collapseExample">Mari kita mulai…</a>
+            <hr>
+            <div class="collapse" id="materi1-1">
+                <div class=" bg-transparent">
+                    <h3 class="fw-bold mt-5 mb-3" id="apaitu">Apa itu Java? </h3>
+                    <p>Java adalah bahasa pemrograman yang dibuat oleh James Gosling.</p>
+                    </p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid" src="../image/james-gosling.jpg"/></figure>
+                    </div>
+                    </p>
+                    <p>Sintaks Java mirip seperti C/C++, karena Java banyak terinspirasi dari keuda bahasa ini.</p>
+                    <p>Java dirancang untuk tujuan umum (general-purpose) dan sepenuhnya menganut paradigma OOP (Object
+                        Oriented Programming).</p>
+                    <p>OOP adalah paradigma pemrograman yang berbasis pada objek.</p>
+                    <p>Setiap kita membuat program, maka wajib hukumnya membuat objek terlebih dahulu.</p>
+                    <p>Ya.. namanya juga OOP, program yang berorientasikan objek.</p>
+                    <p> Namun, jangan khawatir.</p>
+                    <p>Jika kamu belum tahu apa-apa tentang OOP, saya tidak akan menggunakan pendekatan OOP dalam
+                        menjelaskan Java di tutorial ini.</p>
+                    <p>Saya akan menggunakan pendekatan prosedural, yang notabene lebih mudah dipahami pemula.</p>
+                    <p>Emang bisa?</p>
+                    <p>Java kan sepenuhnya menganut OOP.</p>
+                    <p>Ya bisa-bisa saja, meski terkesan dipaksakan. Namun, menurut saya inilah cara terbaik untuk
+                        mengenalkan Java kepada pemula.</p>
+                    <p>Oke..</p>
+                    <p>Sekarang mari kita bahas:</p>
+                    <h5 class="fw-bold mt-5 mb-3" id="materi1">Sejarah Singkat Java</h5>
+                    <p>Proyek pengembangan Java dimulai pada tahun 1991 oleh James Gosling, Mike Sherida, dan Patrick
+                        Naughton.</p>
+                    <p>Awalnya Java bernama Oak, nama ini diambil dari nama pohon yang berada di dekat kantor James
+                        Gosling.
+                    <p>Lalu namanya diubah menjadi Green.</p>
+                    <p>Pada akhirnya, diubah lagi menjadi Java.</p>
+                    <p>Nama Java dipilih karena si Gosling terinspirasi dari asal-usul kopi yang diminumnya, yakni Pulau
+                        Jawa.</p>
+                    <p>Oleh sebab itu logo Java itu bentuknya seperti secangkir kopi..</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid" src="../image/kopi.jpg" alt="Secangkir kopi">
+                        </figure>
+                    </div>
+                    </p>
+                    <h5 class="fw-bold mt-5 mb-3" id=versi-dan-perkembangan-java class=h5>Versi dan Perkembangan
+                        Java</h5>
+                    <p>Java versi pertama (1.0) dirilis pada tahun 1996. Berikut ini tabel versi Java dari tahun ke
+                        tahun.</p>
+                    <div align="center">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <table class="table responsive table-striped table-hover"
+                                       style="width:100%; text-align:center;">
+                                    <thead>
+                                    <tr>
+                                        <th>Versi</th>
+                                        <th>Tanggal Rilis</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>JDK Beta</td>
+                                        <td>1995</td>
+                                    </tr>
+                                    <tr>
+                                        <td>JDK 1.0</td>
+                                        <td>January 23, 1996</td>
+                                    </tr>
+                                    <tr>
+                                        <td>JDK 1.1</td>
+                                        <td>February 19, 1997</td>
+                                    </tr>
+                                    <tr>
+                                        <td>J2SE 1.2</td>
+                                        <td>December 8, 1998</td>
+                                    </tr>
+                                    <tr>
+                                        <td>J2SE 1.3</td>
+                                        <td>May 8, 2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>J2SE 1.4</td>
+                                        <td>February 6, 2002</td>
+                                    </tr>
+                                    <tr>
+                                        <td>J2SE 5.0</td>
+                                        <td>September 30, 2004</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Java SE 6</td>
+                                        <td>December 11, 2006</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Java SE 7</td>
+                                        <td>July 28, 2011</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Java SE 8</td>
+                                        <td>March 18, 2014</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Java SE 9</td>
+                                        <td>September 21, 2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Java SE 10</td>
+                                        <td>March 20, 2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Java SE 11</td>
+                                        <td>September 25, 2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Java SE 12</td>
+                                        <td>March 19, 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Java SE 13</td>
+                                        <td>September 17, 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Java SE 14</td>
+                                        <td>March 17, 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Java SE 15</td>
+                                        <td>September 15, 2020</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    </br>
+                    <h5 class="fw-bold mt-5 mb-3">Apa itu JDK, J2SE, Java SE, dan Java EE?</h5>
+                    <p>JDK adalah singkatan dari Java Development Kit. JDK berisi tools, library, dan API yang kita
+                        perlukan untuk membuat program dengan Java. Termasuk di dalamnya juga ada JVM.</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid" src="../image/jdk.png"></figure>
+                    </div>
+                    </p>
+                    <p>Nah, si JDK ini punya beberapa edisi.. ada Java SE (Standart Edition), Java EE (Enterprise
+                        Edition), dan Java ME (Micro Edition).</p>
+                    <p>Java SE atau J2SE adalah Java yang digunakan untuk membuat aplikasi standar seperti aplikasi
+                        desktop dan command line (CLI).</p>
+                    <p>Sedangkan Java EE adalah edisi enterprise yang digunakan untuk membuat aplikasi enterprise
+                        seperti dalam Bank, Industri, dll. Namun, Java EE sekarang sudah berubah nama menjadi Jakarta
+                        EE.</p>
+                    <p>Lalu, Java ME adalah Java versi mungil yang digunakan untuk membuat aplikasi mobile, micro
+                        controller, sensor, dll.</p>
+                    <p>Jika kamu pernah pakai HP Nokia sebelum adanya HP Android, di sana kebanyakan aplikasinya dibuat
+                        dengan Java ME.</p>
+                    <p><h5 class="fw-bold mt-5 mb-3">Mengapa sih Belajar Java?</h5></p>
+                    <p>Setiap orang punya alasan yang berbeda-beda, mengapa mereka ingin belajar Java.</p>
+                    <p>Jika kamu belum tahu, mengapa harus belajar Java..</p>
+                    <p>Saya coba berikan beberapa alasan yang mungkin akan membuatmu tertarik:</p>
+                    <h6 class="fw-bold mt-5 mb-3">1. Java Bersifat General-purpose</h6>
+                    <br>Java itu bahasa yang general-purpose, artinya Java tidak hanya dipakai untuk membuat program
+                    yang spesifik saja.
+                    <p>Kalau diibaratkan, Java itu seperti kunci inggris yang bisa membuka berbagai macam ukuran baut
+                        dan mur.</p>
+                    <p>Sedangkan kunci-kunci yang lainnya hanya bisa membuka baut ukuran tertentu saja.</p>
+                    <p>Sebagai Contoh.. ada bahasa SQL yang khusus untuk melakukan query data.</p>
+                    <p>Mau bikin tampilan aplikasi desktop pakai SQL?</p>
+                    <p>Mana bisa.</p>
+                    <p>Sedangkan Java, bisa dipakai untuk membuat berbagai macam aplikasi.</p>
+                    <p>Mau bikin aplikasi desktop.. ✅ bisa;</p>
+                    <p>Mau bikin aplikasi android.. ✅ bisa;</p>
+                    <p>Mau bikin aplikasi web.. ✅ bisa;</p>
+                    <p>Jadi punya ilmu Java itu menguntungkan. Selain berguna untuk membuat berbagai macam aplikasi,
+                        Java juga banyak dipakai di perushaan.</p>
+                    <h6 class="fw-bold mt-5 mb-3"> 2. Java itu Cross-platform</h6>
+                    <p>Cross-platform artinya bisa berjalan di atas platform yang berbeda beda.</p>
+                    <p>
+                    <div align="center"><img class="lazyload img-fluid" src="../image/windows-mac-linux.png"></div>
+                    </p>
+                    <p>Java bisa digunakan di berbagai macam platform, bisa di Linux, Windows, dan MacOS.</p>
+                    <p>Dengan begini, kita tidak perlu pusing untuk membuat binary untuk tiap-tiap platform.</p>
+                    <p>Misalnya, untuk windows kita harus bikin <code>.exe</code>, Linux <code>.deb</code> atau <code>.rpm</code>,
+                        dan Mac <code>.dmg</code>.</p>
+                    <p>Cukup dengan file <code>jar</code> saja, jika di platform tersebut sudah terinstal Java, maka
+                        program tersebut akan langsung bisa dibuka.</p>
+                    <h6 class="fw-bold mt-5 mb-3"> 3. Java untuk Membuat Aplikasi Android</h6>
+                    <p>Salah satu alasan yang kuat untuk belajar Java adalah untuk membuat aplikasi android.</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid" src="../image/android-studio.png"
+                                                alt="Android Stuio"></figure>
+                    </div>
+                    </p>
+                    <p>Meskipun sekarang Google lebih mengandalkan Kotlin dibandingkan Java, namun tidak ada salahnya
+                        belajar Java terlebih dahulu.</p>
+                    <p>Kotlin memang lebih singkat dibandingkan Java, namun dibalik kode yang singkat itu ada peran
+                        Java.</p>
+                    <p>Nah, dengan mengetahui Java.. nantinya kamu juga akan mudah memahami Kotlin.</p>
+                    <h6 class="fw-bold mt-5 mb-3"> 4. Java itu Populer</h6>
+                    <p>Berdasarkan TIOBE Programming Community Index, Java adalah bahasa terpopuler dari tahun
+                        2016–2018, dan beberapa tahun di blakang.</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid" src="../image/popularitas-java.png"
+                                                alt="Popularitas Java"></figure>
+                    </div>
+                    </p>
+                    <p>Dari segi popularitas, Java bersaing dengan C dan C++.</p>
+                    <p>Semakin populer sebuah bahasa, maka komunitasnya akan semakin banyak.</p>
+                    <p>Ini tentunya menguntungkan kita, karena saat terjadi masalah.. ada tempat bertanya dan
+                        berdiskusi.</p>
+                    <h6 class="fw-bold mt-5 mb-3">Bagaimana Cara Mulai Belajar Java?</h6>
+                    <p>Saat membaca tutorial ini, sebenernya kamu sudah memulai belajar Java.</p>
+                    <p>Ini mungkin langkah pertamamu..</p>
+                    <p>Selamat! 🥳</p>
+                    <p>Berikutnya..</p>
+                    <p>Mulailah mempersiapkan alat untuk belajar Java seperti JDK, Teks Editor atau IDE. Ini kita akan
+                        bahas ditutorial berikutnya.</p>
+                    <p>Setelah itu, pelajari basic-basic Java seperti sintaks dasar Java, Variabel, Fungsi input dan
+                        output, hingga nantinya mampu membuat program sendiri dengan Java.</p>
+                    <h6 class="fw-bold mt-5 mb-3">Apa Selanjutnya?</h6>
+                    <p>Baik..</p>
+                    <p>Sejauh ini, saya anggap kamu sudah mengenal apa itu Java dan asal usul bahasa pemrograman
+                        Java.</p>
+                    <p>Berikutnya, silahkan lanjutkan dengan:</p>
+                    <ul>
+                        <li>Memahami Bagaimana Program Java dieksekusi pada Komputer</li>
+                        <li>Menyiapkan Peralatan untuk Belajar Java di Windows</li>
+                        <li>Menyiapkan Peralatan untuk Belajar Java di Linux</li>
+                    </ul>
+                </div>
+            </div>
+			
+			
+            <h3 class="fw-bold mt-5 mb-3" id="materi2">Belajar Java: Konsep Pemrograman Java yang Harus dipahami</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-12 mb-3 mt-3">
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7JADsXof_Go"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <p>Pernah tidak kamu berpikir:</p>
+            <p>Bagaimana cara program komputer itu dibuat?</p>
+            <p>Bagaimana komputer mengeksekusi program?</p>
+            <p>Jika, iya.. maka ini artikel yang harus kamu baca.</p>
+            <p>Pada kesempatan ini, kita akan membahas dari dasar.</p>
+            <p>Sehingga kamu akan paham dengan konsep pemrograman.</p>
+            <p>Baik itu di Java, maupun bahasa pemrograman lain.</p>
+            <p>Siap?</p>
+            <a class="btn-collapse px-3 py-2 rounded fw-bold" data-bs-toggle="collapse" href="#materi2-1" role="button" aria-expanded="false"
+               aria-controls="collapseExample">Mari kita mulai...</a>
+
+
+            <div class="collapse" id="materi2-1">
+                <div class=" bg-transparent">
+                    <h3 class="fw-bold mt-5 mb-3" id="apaitu">Apa itu Pemrograman?</h3>
+                    <p>Pemrograman adalah <strong>proses</strong> yang dilakukan untuk membuat <strong>program
+                        komputer</strong>.</p>
+                    <p>Jadi, segala aktifitas yang kamu lakukan untuk kembuat program disebut pemrograman atau <em>programming</em>.
+                    </p>
+                    <p>Biasanya aktivitas ini meliputi:</p>
+                    <ol>
+                        <li>Analisis (analisis permasalahan);</li>
+                        <li>Pembuatan Algoritma atau Solusi;</li>
+                        <li><em>Coding</em> (Implementasi algoritma ke dalam bahasa pemrograman).</li>
+                    </ol>
+                    <p>Banyak orang yang salah saat awal mulai belajar pemrograman.</p>
+                    <p>Mereka mempelajari <em>coding</em> terlebih dahulu, tanpa tahu cara menganalisis dan membuat
+                        algoritma.</p>
+                    <p>Padahal <em>coding</em> adalah tahap akhir dari pemrograman.</p>
+                    <p>Seperti katanya John Johnson:</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid"
+                                                src="../image/solve-first-then-write-code.jpg"
+                                                alt=solve-first-then-write-code></figure>
+                    </div>
+                    </p>
+                    <p>&ldquo;Pertama-tama, pecahkan dulu masalahnya, lalu buat kodenya&rdquo;</p>
+                    <p>Banyak orang bisa <em>coding</em>, tapi tidak tahu mau buat apa, dan bahkan kesulitan membuat
+                        programnya sendiri. Ini bisa jadi karena ia cuma belajar <em>coding</em> saja.</p>
+                    <p>Oleh sebab itu, ada baiknya belajar Algoirtma dan <a
+                            href="https://www.youtube.com/watch?v=_6D0ks7wvtI" target=_blank><em>computational
+                        thinking</em>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11"
+                             height="10" viewBox="0 0 11 10" aria-label="External Link" style="margin:0 .15rem">
+                            <polygon fill="#00ad9f"
+                                     points="12 5.038 6.962 10.066 5.668 8.772 8.502 5.961 0 5.961 0 4.116 8.502 4.116 5.691 1.282 6.984 0"
+                                     transform="rotate(-40 6 5.033)"/>
+                        </svg>
+                    </a> terlebih dahulu sebelum mulai belajar <em>coding</em>.
+                    </p>
+                    <p>Algoritma adalah cabang dari ilmu matematika yang mengajari kita berpikir logis untuk
+                        menyelesaikan masalah.</p>
+                    <p>Setidaknya, setelah belajar algoritma.. kamu dapat menciptakan solusi sendiri dari permasalahan
+                        yang kamu ingin selesaikan.</p>
+                    <p>Setelah itu, langkah berikutnya adalah <em>coding</em> dengan bahasa pemrograman.</p>
+                    <h5 class="fw-bold mt-5 mb-3">Bagaimana Komputer Mengeksekusi Program?</h5>
+                    <p>Program komputer dibuat dengan bahasa pemrograman. Bahasa pemrograman umumnya menggunakan bahasa
+                        inggris. Bahasa ini mudah dipahami manusia. Tapi tidak bisa dipahami komputer.</p>
+                    <p>Komputer hanya bisa paham sinyal <code>10101010</code>, karena komputer merupakan rangkaian
+                        elektronik yang hanya bisa hidup dengan listrik. Sinyal ini juga disebut sinyal digital.</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid" src="../image/sinyal-digital.png"
+                                                alt="Sinyal Digital"></figure>
+                    </div>
+                    </p>
+                    <p>Adapun angka <code>1</code> menyatakan sinyal hidup, sedangkan <code>0</code> menyatakan mati.
+                    </p>
+                    <p>Atau kita bisa bilang.</p>
+                    <div class=highlight>
+                        <pre style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                                class=language-txt data-lang=txt>1 = on 0 = off </code></pre>
+                    </div>
+                    <p>Sinyal ini nantinya akan diproses oleh prosesor dan akan membangkitkan aliran listrik pada
+                        rangkain <em>motherboard</em>,</p>
+                    <p>
+                    <div align="center">
+                        <figure class="mb-3 figure border p-1 rounded-0"><img class="lazyload img-fluid"
+                                                                              src="../image/4004_simu_part.gif"
+                                                                              alt="Simulasi CPU Intel 4004 (sumber: pixeljoint.com )"
+                                                                              title="Simulasi CPU Intel 4004 (sumber: pixeljoint.com )">
+                            <figcaption class="figure-caption text-center my-2">Simulasi CPU Intel 4004 (sumber:
+                                pixeljoint.com )
+                            </figcaption>
+                        </figure>
+                    </div>
+                    </p>
+                    <p>sehingga komputer akan dapat melakukan sesuatu seperti menampilkan teks ke layar, memutar musik,
+                        mencetak dokumen, dan lain sebagainya.</p>
+                    <p>Tapi&mldr;</p>
+                    <p>Manusia tidak bisa memberikan sinyal langsung dalam bentuk <code>10101010</code> ke prosesor.
+                        Oleh sebab itu, diciptakanlah <strong>bahasa assembly</strong>.</p>
+                    <p>Bahasa assembly merupakan bahas rakitan yang dibuat dari kode <em>mnemonic</em> atau kode simbol.
+                    </p>
+                    <p>Misal:</p>
+                    <p>Untuk perintah cetak huruf <code>A</code> ke layar, kode simbolnya adalah <code>mov 041,ah</code>
+                        nanti kode ini akan diubah oleh <em>assembler</em> menjadi <code>10010011</code>.</p>
+                    <p>Coba perhatikan gambar berikut:</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid" src="../image/assembler.png" alt=assembler>
+                        </figure>
+                    </div>
+                    </p>
+                    <p>Berkat bahasa assembly, kita bisa memberikan instruksi ke prosesor.</p>
+                    <p>Tapi, bahasa assembly cukup sulit dipahami manusia. Karena itu, diciptakanlah bahasa pemrograman
+                        yang dengan bahasa inggris.</p>
+                    <p>Coba perhatikan gambar ini:</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid" src="../image/compiler.png" alt=compiler>
+                        </figure>
+                    </div>
+                    </p>
+                    <p>Compiler berfungsi untuk mengubah bahasa pemrograman menjadi bahasa assembly. Lalu assembler aan
+                        mengubah bahasa assembly menjadi sinyal <code>10101010</code>.</p>
+                    <p>Hore!! 😀 kini kita sudah bisa memberikan instruksi ke prosesor dengan bahasa yang kita
+                        pahami.</p>
+                    <p>Jika ingin mencetak huruf <code>A</code> ke layar, tinggal gunakan perintah:</p>
+                    <div class=highlight>
+                        <pre style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                                class=language-python data-lang=python><span style=color:#ff79c6>print</span>(<span
+                                style=color:#f1fa8c>&#34;A&#34;</span>)</code></pre>
+                    </div>
+                    <p>Ini sanga mudah dipahami, dibandingkan harus <em>coding</em> dengan bahasa <em>assembly</em>.</p>
+                    <h5 class="fw-bold mt-5 mb-3">Mengapa Kita butuh JVM?</h5>
+                    <p>Kita tidak akan pernah puas dengan kecepatan prosesor saat ini, sehingga perushaan pencipta
+                        prosesor berlomba-lomba membuat prosesor terbaiknya.</p>
+                    <p>Saat ini kita kenal beberapa vendor ternama seperti intel, AMD, IBM, dan ARM.</p>
+                    <p>Tapi yang jadi masalah:</p>
+                    <p>Beda vendor, beda juga kode register bahasa assembly yang dipakai.</p>
+                    <p>Mau tidak mau, kita harus <em>compile</em> program untuk tiap-tiap prosesor.</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid" src="../image/compile-target.png"
+                                                alt=compile-target></figure>
+                    </div>
+                    </p>
+                    <p>Kalau tidak..</p>
+                    <p>Ya program yang kita buat hanya akan bisa dipakai pada komputer tertentu saja. Misalnya, komputer
+                        yang pakai intel saja.</p>
+                    <p>Karena itu, diciptakanlah sebuah mesin virtual. Mesin virtual ini meniru cara kerja prosesor
+                        sehingga bisa mengeksekusi programa.</p>
+                    <p>JVM <em>(Java Virtual Machine)</em> merupakan mesin virtual untuk menjalankan program Java.</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid" src="../image/jvm.png" alt=jvm></figure>
+                    </div>
+                    </p>
+                    <p>Apapun prosesor yang kamu gunakan dan apapun sistem operasi yang kamu gunakan.. selama di sana
+                        sudah terinstal JVM, maka kamu akan bisa menjalankan program Java.</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid" src="../image/jvm-stack.png" alt=jvm-stack>
+                        </figure>
+                    </div>
+                    </p>
+                    <h5 class="fw-bold mt-5 mb-3">Proses dalam Coding Java</h5>
+                    <p>Proses yang akan kita lakukan saat <em>coding</em> java adalah:</p>
+                    <ol>
+                        <li>Menulis kode program Java;</li>
+                        <li>Melakukan Compile;</li>
+                        <li>Menjalankan Program.</li>
+                    </ol>
+                    <p>Coba perhatikan gambar ini:</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid" src="../image/coding-java.png"
+                                                alt=coding-java></figure>
+                    </div>
+                    </p>
+                    <p>Pertama Programmer menulis kode program Java dan akan menghasilkan file dengan nama <code>Program.java</code>.
+                    </p>
+                    <p>File <code>Program.java</code> kemudian di-compile dengan compiler (<code>javac</code>) dan akan
+                        menghasilkan file <code>Program.class</code>.</p>
+                    <p>File <code>Program.class</code> merupakan file yang berisi <em>bytecode</em>. <em>Bytecode</em>
+                        ini merupakan kode yang dipahami JVM. Mirip-mirip seperti bahasa <em>assembly</em>.</p>
+                    <p><em>Bytecode</em> akan dieksekusi oleh JVM, sehingga program pun berjalan.</p>
+                    <p>Proses ini akan terus kita lakukan selama <em>coding</em> Java.</p>
+                    <h5 class="fw-bold mt-5 mb-3">Apa Selanjutnya?</h5>
+                    <p>Selanjutnya, kamu harus menginstal peralatan yang dibutuhkan untuk <em>coding</em> Java seperti:
+                    </p>
+                    <ol>
+                        <li>JDK <em>(Java Development Kit)</em> &ndash; Berisi <em>Compiler</em>, JVM, Libraray, dan
+                            lain-lain;
+                        </li>
+
+                </div>
+            </div>
+            <!-- akhir konten side kanan -->
+        </div>
+    </div>
+    <!-- akhir sidebar -->
+
+    <script src="../bs5/js/bootstrap.bundle.js"></script>
+    <script src="../js/style.js"></script>
+</body>
+</html>

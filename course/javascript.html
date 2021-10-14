@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <!-- link bootrstrap -->
+    <link href="../bs5/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- link css -->
+    <link href="../css/all.css" rel="stylesheet"/>
+    <!-- link fontawesome -->
+    <link crossorigin="anonymous" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" rel="stylesheet"/>
+    <title>course html</title>
+</head>
+<body>
+<!-- membuat sidebar -->
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-transparent">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 sidebar">
+                <a class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-dark text-decoration-none" href="../index.html">
+                    <img alt="logoBrand" class="d-none d-sm-inline" src="../image/logoBrand.png" width="190" height="70"/> </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mt-5"
+                    id="menu">
+                    <li class="nav-item">
+                        <a class="nav-link align-center px-0" href="../index.html"> <i class="fas fa-home fs-3"></i>
+                            <span class="ms-1 d-none d-sm-inline">Home</span> </a>
+                    </li>
+                    <li>
+                        <a class="nav-link px-0 align-center" data-bs-toggle="collapse" href="#submenu1"> <i
+                                class="fas fa-book fs-3"></i> <span class="ms-2 d-none d-sm-inline">Learning</span> </a>
+                        <ul class="collapse show nav flex-column ms-1" data-bs-parent="#menu" id="submenu1">
+                            <li class="w-100">
+                                <a class="nav-link px-0" href="#materi1"> <span class="d-none d-sm-inline">Javacript </span>1</a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" href="#materi2"> <span class="d-none d-sm-inline">Javacript </span>2</a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" onclick="alert3()" href="#"> <span class="d-none d-sm-inline">Javacript </span>3</a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" onclick="alert4()" href="#"> <span class="d-none d-sm-inline">Javacript </span>4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link align-center px-0" href="../course/html.html"> <i class="fab fa-html5 fs-3"></i>
+                            <span class="ms-1 d-none d-sm-inline">HTML</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link align-center px-0" href="../course/java.html"> <i class="fab fa-java fs-3"></i>
+                            <span class="ms-1 d-none d-sm-inline">Java</span> </a>
+                    </li>
+
+                </ul>
+                <hr/>
+				<script>
+				function alert3 (){
+					alert("Maaf materi Javascript 3 saat ini belum tersedia. Terima kasih!");
+					}
+				function alert4 (){
+					alert("Maaf materi Javascript 4 saat ini belum tersedia. Terima kasih!");
+					}
+				</script>
+            </div>
+        </div>
+
+        <!--  konten side kanan-->
+        <div class="col py-3 sidebar-kanan bg-transparent ms-3">
+            <h3 class="fw-bold mt-5 mb-3" id="materi1">Pemrograman Javascript: Langkah Awal Belajar Javascript</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-12 mb-3 mt-3">
+                    <div class="ratio ratio-16x9">
+                        <iframe allowfullscreen class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/RUTV_5m4VeI"></iframe>
+                    </div>
+                </div>
+            </div>
+            <p>Javascript adalah bahasa pemrograman yang wajib
+                kamu pelajari jika ingin mendalami dunia <strong>web development</strong>.</p>
+            <p>Saat ini javascript tidak hanya digunakan di sisi <em>client (browser)</em> saja.
+                Javascript juga digunakan pada server, console, program desktop, mobile, IoT,
+                game, dan lain-lain.</p>
+            <p>Hal ini membuat javascript semakin populer dan menjadi bahasa yang paling banyak digunakan di Github.</p>
+            <p>Pada artikel ini, kita akan belajar Javascript dari dasar.
+                Mulai dari pengenalan Javascript, hingga membuat program
+                pertama dengan Javascript.</p>
+            <p>Siap?</p>
+            <a aria-controls="materi1" aria-expanded="false" class="btn-collapse px-3 py-2 rounded fw-bold" data-bs-toggle="collapse" href="#materi1"
+               role="button">Mari kita mulai…</a>
+
+            <div class="collapse" id="materi1">
+                <div class="bg-transparent">
+                    <h3 class="fw-bold mt-5 mb-3" id="apaitu">Apa itu javascript?</h3>
+                    <p>Javascript adalah bahasa pemrograman yang awalnya dirancang untuk berjalan di atas browser.</p>
+                    <p>Namun, seiring perkembangan zaman, javascript tidak hanya berjalan di atas browser saja.
+                        Javascript juga dapat digunakan pada sisi Server, Game, IoT, Desktop, dsb.</p>
+                    <p>Javascript awalnya bernama <strong>Mocha</strong>, lalu berubah menjadi
+                        <strong>LiveScript</strong> saat
+                        browser
+                        Netscape Navigator 2.0 rilis versi beta (September 1995). Namun, setelah itu dinamai ulang
+                        menjadi
+                        Javascript.</p>
+                    <p>Terinspirasi dari kesuksesan Javascript, Microsoft mengadopsi teknologi serupa. Microsoft
+                        membuat &lsquo;Javascript&rsquo; versi mereka sendiri bernama JScript. Lalu di tanam pada
+                        Internet
+                        Explorer 3.0.</p>
+                    <p>Hal ini mengakibatkan &lsquo;
+                        <a href=https://en.wikipedia.org/wiki/Browser_wars target=_blank>perang browser
+                        </a>&rsquo;, karena JScript milik Microsoft berbeda dengan Javascript
+                        racikan Netscape.
+                    </p>
+                    <p>Akhirnya pada tahun 1996, Netscape mengirimkan standarisasi ECMA-262 ke
+                        <a href=https://en.wikipedia.org/wiki/Ecma_International target=_blank>Ecma International
+                        </a>. Sehingga lahirlah standarisasi kode
+                        Javascript bernama ECMAScript atau ES. Saat ini ECMAScript sudah mencapai versi 8 (ES8).</p>
+                    <div align="center">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <table class="table responsive table-striped table-hover"
+                                       style="width:80%; text-align:center;">
+                                    <thead>
+                                    <tr>
+                                        <th>Versi ECMAScript</th>
+                                        <th>Tahun Rilis</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>ES 1</td>
+                                        <td>Juni 1997</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ES 2</td>
+                                        <td>Juni 1998</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ES 3</td>
+                                        <td>Desember 1999</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ES 4</td>
+                                        <td>Terbengkalai</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ES 5</td>
+                                        <td>Desember 2009</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ES 5.1</td>
+                                        <td>Juni 2011</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ES 6</td>
+                                        <td>Juni 2015</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ES 7</td>
+                                        <td>Juni 2016</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ES 8</td>
+                                        <td>Juni 2017</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div><div class="col-md-2"></div>
+                    </div>
+
+                    <h5 class="fw-bold mt-5 mb-3">Peralatan untuk Belajar Javascript</h5>
+                    <p>Apa saja perlatan yang harus disiapkan untuk belajar Javascript?</p>
+                    <ol>
+                        <li>Web Browser (Google Chrome, Firefox, Opera, dll)</li>
+                        <li>Teks Editor (rekomendasi: VS Code)
+                        </li>
+                    </ol>
+                    <p>Itu saja?</p>
+                    <p>Ya itu saja sudah cukup. Bila kamu ingin belajar Javacript dari Nodejs </p>
+                    <p>Rekomendasi saya: belajar Javascript dari sisi client dulu.
+                        Nanti Nodejs belakangan.</p>
+                    <h5 class="fw-bold mt-5 mb-3">Mengenal Console JavaScript</h5>
+                    <p>Ada yang mengatakan, belajar javascript itu susah, karena saat melihat hasilnya di web browser,
+                        pesan
+                        <em>error</em>-nya tidak tampil. Pendapat ini tidak benar. Karena kita bisa melihatnya melalui
+                        <em>console</em>.
+                    </p>
+                    <p><em>Console</em> Javascript dapat kita buka melalui <strong>Inspect Element->Console</strong>.
+                    </p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img alt="Console Mozilla Firefox" class="lazyload img-fluid"
+                                                src="../image/console.png"></figure>
+                    </div>
+                    </p><p>Di dalam <em>console</em>, kita bisa menulis fungsi atau kode-kode javascript dan hasilnya
+                    akan
+                    langsung ditampilkan.</p>
+                    <p>Misalnya, mari kita coba kode berikut:</p>
+                    <div class=highlight>
+                        <pre
+                            style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                            class=language-javascript data-lang=javascript>console.log(<span style=color:#f1fa8c>"Hi apa kabar!"</span>);
+alert(<span style=color:#f1fa8c>"Saya sedang belajar javascript"</span>);
+</code></pre>
+                    </div>
+                    <p>Maka hasilnya:</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img alt="Console Javascript Mozilla Firefox" class="lazyload img-fluid"
+                                                src="../image/console-js.png"></figure>
+                    </div>
+                    </p><p>Jika kamu menggunakan Nodejs, maka cara mengakses <em>console</em> adalah dengan
+                    mengetik perintah <code>node</code> pada Terminal.</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img alt="Console Javascript di Nodejs" class="lazyload img-fluid"
+                                                src="../image/console-nodejs.png"></figure>
+                    </div>
+                    </p><p>Setelah mencoba <em>console</em> Javascript, maka dapat kita simpulkan:</p>
+                    <ul>
+                        <li><em>Console</em> bisa digunakan untuk mengujicoba fungsi atau kode Javascript;</li>
+                        <li><em>Console</em> dapat kita gunakan untuk melihat pesan error saat <em>debugging</em>
+                            program.
+                        </li>
+                        <li><em>&mldr;apa lagi ya?</em></li>
+                    </ul>
+                    <h5 class="fw-bold mt-5 mb-3">Membuat Program Javascript Pertama</h5>
+                    <p>Sudah paham cara membuka dan menggunakan console javascript?</p>
+                    <p>Bagus&mldr;</p>
+                    <p>Kalau begitu, mari kita buat program pertama dengan Javascript.</p>
+                    <p>Silahkan buka teks editor, kemudian buat file
+                        beru bernama <code>hello_world.html</code> dan isi dengan kode berikut:</p>
+                    <div class=highlight><pre
+                            style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                            class=language-html data-lang=html><span style=color:#ff79c6>&lt;!DOCTYPE html&gt;</span>
+				&lt;<span style=color:#ff79c6>html</span>&gt;
+				&lt;<span style=color:#ff79c6>head</span>&gt;
+				&lt;<span style=color:#ff79c6>title</span>&gt;Hello World Javascript&lt;/<span
+                                style=color:#ff79c6>title</span>&gt;
+				&lt;/<span style=color:#ff79c6>head</span>&gt;
+				&lt;<span style=color:#ff79c6>body</span>&gt;
+				&lt;<span style=color:#ff79c6>script</span>&gt;
+				console.log(<span style=color:#f1fa8c>"Saya belajar Javascript"</span>);
+				<span style=color:#8be9fd;font-style:italic>document</span>.write(<span style=color:#f1fa8c>"Hello World!"</span>);
+				&lt;/<span style=color:#ff79c6>script</span>&gt;
+				&lt;/<span style=color:#ff79c6>body</span>&gt;
+				&lt;/<span style=color:#ff79c6>html</span>&gt;
+				</code></pre>
+                    </div>
+                    <p>Jika kamu menggunakan teks editor VS Code,
+                        maka akan terlihat seperti ini:</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img alt="Menulis program javascript di teks editor VS Code" class="lazyload img-fluid"
+                                                src="../image/vscode-js.png"></figure>
+                    </div>
+                    </p><p>Silahakn disimpan dengan nama <code>hello_world.html</code>,
+                    kemudian buka file tersebut dengan web browser.</p>
+                    <p>Maka hasilnya:</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img alt="Program hello world Javascript" class="lazyload img-fluid"
+                                                src="../image/hello-world.png"></figure>
+                    </div>
+                    </p><p>Tunggu sebantar&mldr;</p>
+                    <p>Tadi kita menulis perintah:</p>
+                    <div class=highlight><pre
+                            style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                            class=language-javascript data-lang=javascript>console.log(<span style=color:#f1fa8c>"Saya belajar Javascript"</span>);
+</code></pre>
+                    </div>
+                    <p>Mengapa tidak ditampilkan?</p>
+                    <p>Karena perintah atau fungsi <code>console.log()</code> akan menampilkan pesan ke dalam <em>console</em>
+                        javascript.
+                        Sedangkan perintah <code>document.write()</code> berfungsi untuk menulis ke dokumen HTML, maka
+                        dia akan
+                        ditampilkan kesana.</p>
+                    <p>Sekarang coba saja buka console javascript.</p>
+                    <p>Maka kita akan melihat pesan <code>"Saya belajar Javascript"</code>:</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img alt="Program hello world di console javascript" class="lazyload img-fluid"
+                                                src="../image/hello-world-console.png"></figure>
+                    </div>
+                    </p><p>Mantap&mldr; 👍</p>
+                    <p>Kita sudah mengenal fungsi <code>document.write()</code> dan <code>console.log()</code>,
+                    <p>Sekarang, yang perlu kita ketahui berikutnya adalah:</p>
+                    <h5 class="fw-bold mt-5 mb-3">Bagaimana Cara Menulis Kode Javascript di
+                        HTML?</h5>
+                    <p>Pada contoh di atas, kita sudah menulis kode javascript
+                        di dalam HTML.</p>
+                    <p>Cara tersebut merupakan cara penulisan <em>embeded</em> (ditempel).</p>
+                    <p>Masih ada beberapa cara lagi yang perlu kita ketahui:</p>
+                    <ol>
+                        <li><em>Embed</em> (Kode Javascript ditempel langsung pada HTML. Contoh: yang tadi)</li>
+                        <li><em>Inline</em> (kode Javascript ditulis pada atribut HTML)</li>
+                        <li>Eksternal (Kode Javascript ditulis terpisah dengan file HTML)</li>
+                    </ol>
+                    <p>Mari kita lihat contohnya&mldr;</p>
+                    <h6 class="fw-bold mt-5 mb-3">1. Penulisan Kode javascript dengan Embed</h6>
+                    <p>Pada cara ini, kita menggunakan tag <code>&lt;script></code> untuk menempelkan <em>(embed)</em>
+                        kode
+                        Javascript pada HTML.
+                        Tag ini dapat ditulis di dalam tag <code>&lt;head></code> dan <code>&lt;body></code>.</p>
+                    <p>Contoh:</p>
+                    <div class=highlight><pre
+                            style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                            class=language-html data-lang=html><span style=color:#ff79c6>&lt;!DOCTYPE html&gt;</span>
+&lt;<span style=color:#ff79c6>html</span>&gt;
+    &lt;<span style=color:#ff79c6>head</span>&gt;
+        &lt;<span style=color:#ff79c6>title</span>&gt;Belajar Javascript dari Nol&lt;/<span
+                                style=color:#ff79c6>title</span>&gt;
+        &lt;<span style=color:#ff79c6>script</span>&gt;
+            <span style=color:#6272a4>// ini adalah penulisan kode javascript
+</span><span style=color:#6272a4></span>            <span style=color:#6272a4>// di dalam tag &lt;head&gt;
+</span><span style=color:#6272a4></span>            console.log(<span
+                                style=color:#f1fa8c>"Hello JS dari Head"</span>);
+        &lt;/<span style=color:#ff79c6>script</span>&gt;
+    &lt;/<span style=color:#ff79c6>head</span>&gt;
+    &lt;<span style=color:#ff79c6>body</span>&gt;
+        &lt;<span style=color:#ff79c6>p</span>&gt;Tutorial Javascript untuk Pemula&lt;/<span
+                                style=color:#ff79c6>p</span>&gt;
+        &lt;<span style=color:#ff79c6>script</span>&gt;
+            <span style=color:#6272a4>// ini adalah penulisan kode javascript
+</span><span style=color:#6272a4></span>            <span style=color:#6272a4>// di dalam tag &lt;body&gt;
+</span><span style=color:#6272a4></span>            console.log(<span
+                                style=color:#f1fa8c>"Hello JS dari body"</span>);
+        &lt;/<span style=color:#ff79c6>script</span>&gt;
+    &lt;/<span style=color:#ff79c6>body</span>&gt;
+&lt;/<span style=color:#ff79c6>html</span>&gt;
+</code></pre>
+                    </div>
+                    <p>Mana yang lebih bagus, ditulis di dalam <code>&lt;head></code> atau <code>&lt;body></code>?</p>
+                    <p>Banyak yang merekomendasikan menuliskannya di dalam <code>&lt;body></code>,
+                        karena akan membuat web di-load lebih cepat.</p>
+                    <h6 class="fw-bold mt-5 mb-3">2. Penulisan Kode javascript Inline</h6>
+                    <p>Pada cara ini, kita akan menulis kode javascript di dalam atribut HTML.
+                        Cara ini biasanya digunakan untuk memanggil suatu fungsi pada <em>event</em> tertentu.</p>
+                    <p>Misal: saat link diklik.</p>
+                    <p>Contoh:</p>
+                    <div class=highlight><pre
+                            style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                            class=language-html data-lang=html>&lt;<span style=color:#ff79c6>a</span> <span
+                            style=color:#50fa7b>href</span><span
+                            style=color:#ff79c6>=</span><span style=color:#f1fa8c>"#"</span> <span
+                            style=color:#50fa7b>onclick</span><span
+                            style=color:#ff79c6>=</span><span style=color:#f1fa8c>"alert(&#39;Yey!&#39;)"</span>&gt;Klik aku!&lt;/<span
+                            style=color:#ff79c6>a</span>&gt;
+</code></pre>
+                    </div>
+                    <p>atau bisa juga seperti ini:</p>
+                    <div class=highlight><pre
+                            style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                            class=language-html data-lang=html>&lt;<span style=color:#ff79c6>a</span> <span
+                            style=color:#50fa7b>href</span><span
+                            style=color:#ff79c6>=</span><span
+                            style=color:#f1fa8c>"javascript:alert(&#39;Yey!&#39;)"</span>&gt;Klik aku!&lt;/<span
+                            style=color:#ff79c6>a</span>&gt;
+</code></pre>
+                    </div>
+                    <p>Hasilnya:</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img alt="Contoh inline javascript" class="lazyload img-fluid"
+                                                src="../image/inline-js.gif"></figure>
+                    </div>
+                    </p><p>Perhatikan&mldr;</p>
+                    <p>Pada atribut <code>onclick</code> dan <code>href</code> kita menuliskan fungsi
+                        javascript di sana.</p>
+                    <p>Atribut <code>onclick</code> merupakan atribut HTML untuk menyatakan
+                        fungsi yang akan dieksekusi saat elemen itu diklik.</p>
+                    <p>Pada contoh di atas, kita menjalankan fungsi <code>alert()</code>.
+                        Fungsi ini merupakan fungsi untuk menampilkan dialog.</p>
+                    <p>Lalu pada atribut <code>href</code>, kita juga memanggil fungsi
+                        <code>alert()</code> dengan didahului <code>javascript:</code>.</p>
+                    <p>Atribut <code>href</code> sebenarnya digunakan untuk mengisi
+                        alamat link atau URL.</p>
+                    <p>Karena kita ingin memanggil kode javascript di sana,
+                        maka alamat link tersebut kita ubah menjadi <code>javascript:</code>
+                        lalu diikuti dengan fungsi yang akan dipanggil.</p>
+                    <h6 class="fw-bold mt-5 mb-3">3. Penulisan Kode javascript Eksternal</h6>
+                    <p>Pada cara ini, kita akan menulis kode javascript
+                        secara terpisah dengan file HTML.</p>
+                    <p>Cara ini biasanya digunakan pada proyek-proyek besar,
+                        karena diyakini&mdash;dengan cara ini&mdash;dapat lebih mudah mengelola kode project.</p>
+                    <p>Mari kita lihat contohnya&mldr;</p>
+                    <p>Kita buat dua file, yaitu: file HTML dan Javascript.</p>
+                    <div class=highlight><pre
+                            style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                            class=language-bash data-lang=bash>belajar-js/
+├── kode-program.js
+└── index.html
+</code></pre>
+                    </div>
+                    <p>Isi dari file <code>kode-program.js</code>:</p>
+                    <div class=highlight><pre
+                            style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                            class=language-javascript data-lang=javascript>alert(<span style=color:#f1fa8c>"Hello, ini adalah program JS eksternal!"</span>);
+</code></pre>
+                    </div>
+                    <p>Isi dari file <code>index.html</code>:</p>
+                    <div class=highlight><pre
+                            style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                            class=language-html data-lang=html><span style=color:#ff79c6>&lt;!DOCTYPE html&gt;</span>
+&lt;<span style=color:#ff79c6>html</span>&gt;
+    &lt;<span style=color:#ff79c6>head</span>&gt;
+        &lt;<span style=color:#ff79c6>title</span>&gt;Belajar Javascript dari Nol&lt;/<span
+                                style=color:#ff79c6>title</span>&gt;
+    &lt;/<span style=color:#ff79c6>head</span>&gt;
+    &lt;<span style=color:#ff79c6>body</span>&gt;
+        &lt;<span style=color:#ff79c6>p</span>&gt;Tutorial Javascript untuk Pemula&lt;/<span
+                                style=color:#ff79c6>p</span>&gt;
+
+        <span style=color:#6272a4>&lt;!-- Menyisipkan kode js eksternal --&gt;</span>
+        &lt;<span style=color:#ff79c6>script</span> <span style=color:#50fa7b>src</span><span
+                                style=color:#ff79c6>=</span><span
+                                style=color:#f1fa8c>"kode-program.js"</span>&gt;&lt;/<span
+                                style=color:#ff79c6>script</span>&gt;
+    &lt;/<span style=color:#ff79c6>body</span>&gt;
+&lt;/<span style=color:#ff79c6>html</span>&gt;
+</code></pre>
+                    </div>
+                    <p>Hasilnya:</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img alt="Contoh Program Javascript eksternal" class="lazyload img-fluid" src="../image/js-eksternal.png">
+                        </figure>
+                    </div>
+                    </p><p>Pada contoh di atas, kita menulis kode javascript terpisah dengan kode HTML.</p>
+                    <p>Lalu, pada kode HTML&mldr;</p>
+                    <p>Kita menyisipkannya dengan memberikan atribut <code>src</code> pada
+                        tag <code>&lt;script></code>.</p>
+                    <div class=highlight><pre
+                            style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                            class=language-html data-lang=html><span style=color:#6272a4>&lt;!-- Menyisipkan kode js eksternal --&gt;</span>
+&lt;<span style=color:#ff79c6>script</span> <span style=color:#50fa7b>src</span><span style=color:#ff79c6>=</span><span
+                                style=color:#f1fa8c>"kode-program.js"</span>&gt;&lt;/<span
+                                style=color:#ff79c6>script</span>&gt;
+</code></pre>
+                    </div>
+                    <p>Maka, apapun yang ada di dalam file <code>kode-program.js</code>
+                        akan dapat dibaca dari file <code>index.html</code>.</p>
+                    <p>Bagaimana kalau file javascriptnya berada di folder yang
+                        berbeda?</p>
+                    <p>Kita bisa menuliskan alamat lengkap foldernya.</p>
+                    <p>Contoh:</p>
+                    <p>Misal kita punya struktur folder seperti ini:</p>
+                    <div class=highlight><pre
+                            style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                            class=language-txt data-lang=txt>belajar-js/
+├── js/
+|   └── kode-program.js
+└── index.html
+</code></pre>
+                    </div>
+                    <p>Maka untuk menyisipkan file <code>kode-program.js</code> ke
+                        dalam HTML, kita bisa menuliskannya seperti ini:</p>
+                    <div class=highlight><pre
+                            style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                            class=language-html data-lang=html>&lt;<span style=color:#ff79c6>script</span> <span
+                            style=color:#50fa7b>src</span><span style=color:#ff79c6>=</span><span style=color:#f1fa8c>"js/kode-program.js"</span>&gt;&lt;/<span
+                            style=color:#ff79c6>script</span>&gt;
+</code></pre>
+                    </div>
+                    <p>Karena file <code>kode-program.js</code> berada di dalam direktori
+                        <code>js</code>.</p>
+                    <p>Kita juga bisa menyisipkan javascript yang ada di
+                        internet dengan memberikan alamat URL lengkapnya.</p>
+                    <p>Contoh:</p>
+                    <div class=highlight><pre
+                            style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                            class=language-html data-lang=html>&lt;<span style=color:#ff79c6>script</span> <span
+                            style=color:#50fa7b>src</span><span style=color:#ff79c6>=</span><span style=color:#f1fa8c>"https://www.petanikode.com/js/kode.js"</span>&gt;&lt;/<span
+                            style=color:#ff79c6>script</span>&gt;
+</code></pre>
+                    </div>
+                    <h5 class="fw-bold mt-5 mb-3">Apa Selanjutnya?</h5>
+                    <p>Selamat 🎉</p>
+                    <p>Kamu sudah mengenal javascript dan sudah membuat program
+                        pertama dengan Javascript.</p>
+                </div>
+            </div>
+
+  	
+            <h3 class="fw-bold mt-5 mb-3" id="materi2">4 Cara Menulis Kode Javascript pada HTML yang Wajib
+                Kamu Ketahui</h3>
+            <div class="row justify-content-center">
+               
+                <div class="col-md-8 col-12 mt-3 mb-3">
+                    <div class="ratio ratio-16x9">
+                        <iframe allowfullscreen class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/RUTV_5m4VeI"></iframe>
+                    </div>
+                </div>
+
+            </div>
+			
+			<p>Baru belajar Javascript?</p>
+            <p>..dan masih bingung dengan cara menulis Javascript di HTML?</p>
+            <p>Tentang!</p>
+            <p>Saya akan menjelaskannya.</p>
+            <p>Ada 4 cara menulis kode Javascript pada HTML.</p>
+            <p>Dari keempat cara ini, ada yang biasa dan sering digunakan..</p>
+            <p>..ada juga yang &lsquo;aneh&rsquo;, jarang digunakan sih tapi masih work!</p>
+            <p>Apa saja keempat cara itu?</p>
+            <a aria-controls="materi2" aria-expanded="false" class="btn-collapse px-3 py-2 rounded fw-bold" data-bs-toggle="collapse" href="#materi2"
+               role="button">Mari kita mulai…</a>
+
+            <div class="collapse" id="materi2">
+                <div class="bg-transparent">
+            <h5 class="fw-bold mt-5 mb-3">1. Menulis Javascript pada Tag <code>&lt;script></code></h5>
+            <p>Penulisan kode Javascript menggunakan tag <code>&lt;script></code> adalah cara umum yang
+                digunakan.</p>
+            <p>Tag <code>&lt;script></code> dapat kita buat di dalam tag <code>&lt;head></code> maupun
+                <code>&lt;body></code>.</p>
+            <p>Contoh:</p>
+            <div class=highlight><pre
+                    style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                    class=language-html data-lang=html><span style=color:#ff79c6>&lt;!DOCTYPE html&gt;</span>
+&lt;<span style=color:#ff79c6>html</span>&gt;
+&lt;<span style=color:#ff79c6>head</span>&gt;
+    &lt;<span style=color:#ff79c6>meta</span> <span style=color:#50fa7b>charset</span><span style=color:#ff79c6>=</span><span
+                        style=color:#f1fa8c>"utf-8"</span>&gt;
+    &lt;<span style=color:#ff79c6>title</span>&gt;Penulisan Javascript&lt;/<span style=color:#ff79c6>title</span>&gt;
+<span style=display:block;width:100%;background-color:#3d3f4a>    &lt;<span style=color:#ff79c6>script</span>&gt;
+</span><span style=display:block;width:100%;background-color:#3d3f4a>    console.log(<span style=color:#f1fa8c>"Hi, ini kode Javascript"</span>);
+</span><span style=display:block;width:100%;background-color:#3d3f4a>    &lt;/<span style=color:#ff79c6>script</span>&gt;
+</span>&lt;/<span style=color:#ff79c6>head</span>&gt;
+&lt;<span style=color:#ff79c6>body</span>&gt;
+
+<span style=display:block;width:100%;background-color:#3d3f4a>&lt;<span style=color:#ff79c6>script</span>&gt;
+</span><span style=display:block;width:100%;background-color:#3d3f4a><span style=color:#8be9fd;font-style:italic>document</span>.write(<span
+                        style=color:#f1fa8c>"Javascript itu keren!"</span>);
+</span><span style=display:block;width:100%;background-color:#3d3f4a>&lt;/<span style=color:#ff79c6>script</span>&gt;
+</span>&lt;/<span style=color:#ff79c6>body</span>&gt;
+&lt;/<span style=color:#ff79c6>html</span>&gt;
+</code></pre>
+            </div>
+            <p>Hasilnya:</p>
+            <p>
+            <div align="center"><figure class=mb-3><img alt=penulisan-javascript-di-tag-script class="lazyload img-fluid" src="../image/penulisan-javascript-di-tag-script.png"></figure></div>
+            </p><p>Mana sih yang lebih baik?</p>
+            <p>ditulis di dalam <code>&lt;head></code> atau di <code>&lt;body></code>?</p>
+            <p>Kedua cara ini memang sah-sah saja dilakukan,
+                namun ada juga pendapat yang mengatakan:</p>
+            <blockquote><p>Placing scripts at the bottom of the <code>&lt;body></code> element improves the display
+                speed,
+                because script interpretation slows down the display. <sup id=fnref:1><a class=footnote-ref href=#fn:1
+                                                                                         role=doc-noteref>1</a></sup>
+            </p></blockquote>
+            <p>Penulisan di akhir <code>&lt;body></code> akan meningkatkan kecepatan display atau tampilnya
+                konten di web.</p>
+            <p>Karena, jika kita tulis di dalam <code>&lt;head></code>, script tersebut akan dieksekusi
+                terlebih dahulu sebelum konten ditampilkan.</p>
+            <p>Jadi, disarankan menulis kode Javascript di dalam <code>&lt;body></code>, tepatnya
+                sebelum tutup <code>&lt;/body></code>.</p>
+            <h5 class="fw-bold mt-5 mb-3">2. Menulis Javascript pada File Eksternal</h5>
+            <p>Cara kedua, kita bisa menulis Javascript di File yang terpisah dengan HTML.</p>
+            <p>Biasanya digunakan jika kita tidak ingin kode Javascript bercampur dengan kode HTML.</p>
+            <p>Bagaimana caranya?</p>
+            <p>Caranya, buatlah sebuah file yang berekstensi <code>.js</code>. File ini kita isi dengan kode Javascript.
+            </p>
+            <p>Sebagai contoh, saya akan membuat file eksternal dengan nama <code>kode-script.js</code> dan <code>file-external.html</code>
+                sebagai kode HTML-nya.</p>
+            <p>
+            <div align="center"><figure class=mb-3><img alt="file javascript dan html" class="lazyload img-fluid" src="../image/file-javascript-dan-html.png"></figure></div>
+            </p><p>Berikut ini isi file <code>kode-script.js</code> :</p>
+            <div class=highlight><pre
+                    style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                    class=language-js data-lang=js><span
+                    style=color:#8be9fd;font-style:italic>document</span>.write(<span style=color:#f1fa8c>"Kode Javascript dari File Eksternal"</span>);
+</code></pre>
+            </div>
+            <p>Lalu isi <code>file-external.html</code> adalah sebagai berikut:</p>
+            <div class=highlight><pre
+                    style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                    class=language-html data-lang=html><span style=color:#ff79c6>&lt;!DOCTYPE html&gt;</span>
+&lt;<span style=color:#ff79c6>html</span>&gt;
+&lt;<span style=color:#ff79c6>head</span>&gt;
+&lt;<span style=color:#ff79c6>meta</span> <span style=color:#50fa7b>charset</span><span
+                        style=color:#ff79c6>=</span><span style=color:#f1fa8c>"utf-8"</span>&gt;
+&lt;<span style=color:#ff79c6>title</span>&gt;Penulisan Javascript&lt;/<span style=color:#ff79c6>title</span>&gt;
+&lt;/<span style=color:#ff79c6>head</span>&gt;
+&lt;<span style=color:#ff79c6>body</span>&gt;
+
+<span style=display:block;width:100%;background-color:#3d3f4a>    &lt;<span style=color:#ff79c6>script</span> <span
+        style=color:#50fa7b>src</span><span style=color:#ff79c6>=</span><span style=color:#f1fa8c>"kode-script.js"</span>&gt;&lt;/<span
+        style=color:#ff79c6>script</span>&gt;
+</span>&lt;/<span style=color:#ff79c6>body</span>&gt;
+&lt;/<span style=color:#ff79c6>html</span>&gt;
+</code></pre>
+            </div>
+            <p>Hasilnya:</p>
+            <p>
+            <div align="center"><figure class=mb-3><img alt="contoh ekternal javascript" class="lazyload img-fluid" src="../image/contoh-ekternal-javascript.png"></figure></div>
+            </p><p>Coba kamu perhatikan!</p>
+            <p>Pada kode HTML <code>file-external.html</code>, kita tetap menggunakan tag <code>&lt;script></code>. Akan
+                tetapi, tag ini tidak kita isi dengan kode Javascript. Melainkan kita menggunakan atribut
+                <code>src</code> untuk menggunakan kode Javascript yang ada di file <code>kode-script.js</code>.</p>
+            <p>O ya, perlu diperhatikan juga:</p>
+            <p>Tag <code>&lt;script></code> tetap harus ditutup dengan <code>&lt;/script></code> walaupun tidak punya
+                isi.</p>
+            <p>Salah: ❌</p>
+            <div class=highlight><pre
+                    style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                    class=language-html data-lang=html>&lt;<span style=color:#ff79c6>script</span> <span
+                    style=color:#50fa7b>src</span><span style=color:#ff79c6>=</span><span style=color:#f1fa8c>"kode-script.js"</span>&gt;
+</code></pre>
+            </div>
+            <p>Benar: ✅</p>
+            <div class=highlight><pre
+                    style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                    class=language-html data-lang=html>&lt;<span style=color:#ff79c6>script</span> <span
+                    style=color:#50fa7b>src</span><span style=color:#ff79c6>=</span><span style=color:#f1fa8c>"kode-script.js"</span>&gt;&lt;/<span
+                    style=color:#ff79c6>script</span>&gt;
+</code></pre>
+            </div>
+            <p>Lalu gimana jika kode Javascript-nya berada di folder yang berbeda dengan dokumen HTML-nya?</p>
+            <p>Atau Javascriptnya berada di internet?</p>
+            <p>Itu gimana?</p>
+            <p>Untuk kode Javascript yang berada di folder yang berbeda, kita menulisnya mengikuti alamat path
+                foldernya.</p>
+            <p>Misalnya struktur foldernya seperti ini:</p>
+            <p>
+            <div align="center"><figure class=mb-3><img alt="struktur direktori project" class="lazyload img-fluid" src="../image/struktur-direktori-project.png"></figure></div>
+            </p><p>Karena file <code>kode-script.js</code> berada di dalam folder <code>js</code>, maka kita harus
+                menulisnya:</p>
+            <div class=highlight><pre
+                    style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                    class=language-html data-lang=html>&lt;<span style=color:#ff79c6>script</span> <span
+                    style=color:#50fa7b>src</span><span style=color:#ff79c6>=</span><span style=color:#f1fa8c>"js/kode-script.js"</span>&gt;&lt;/<span
+                    style=color:#ff79c6>script</span>&gt;
+</code></pre>
+            </div>
+            <p>Giaman paham kan?</p>
+            <p>Nah, untuk kode Javascript yang diambil dari internet, kita cukup tuliskan alamat URL dari Javascript
+                tersebut.</p>
+            <p>Contoh:</p>
+            <div class=highlight><pre
+                    style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                    class=language-html data-lang=html>&lt;<span style=color:#ff79c6>script</span> <span
+                    style=color:#50fa7b>src</span><span style=color:#ff79c6>=</span><span style=color:#f1fa8c>"https://code.jquery.com/jquery-3.5.1.min.js"</span>&gt;&lt;/<span
+                    style=color:#ff79c6>script</span>&gt;
+</code></pre>
+            </div>
+            <h5 class="fw-bold mt-5 mb-3">3. Menulis Javascript pada Atribut</h5>
+            <p>Penulisan Javascript pada atribut bisanya dilakukan pada atribut event.</p>
+            <p>Contoh:</p>
+            <div class=highlight><pre
+                    style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                    class=language-html data-lang=html>&lt;<span style=color:#ff79c6>button</span> <span
+                    style=color:#50fa7b>onclick</span><span style=color:#ff79c6>=</span><span style=color:#f1fa8c>"alert(&#39;Ok Terima kasih!&#39;)"</span>&gt;Klik donk!&lt;/<span
+                    style=color:#ff79c6>button</span>&gt;
+</code></pre>
+            </div>
+            <p>Pada contoh ini, kita membuat elemen <code>&lt;button></code> dan memiliki attribut <code>onclick</code>
+                yang berisi kode Javascript.</p>
+            <p>Nantinya, kode javascript yang ada di dalam atribut <code>onclick</code> akan dieksekusi saat event klik
+                terjadi pada elemen <code>&lt;button></code>.</p>
+            <p><div align="center">
+                        <video autoplay class="lazyload img-fluid mb-3" loop muted playsinline>
+                        <source src="../image/onclick.mp4" type=video/webm>
+                        <source src="../image/onclick.mp4" type=video/mp4>
+                    </video></div>
+                </p>
+                <p>Apakah Javascript hanya bisa ditulis pada atribut <code>onclick</code> saja?</p>
+                <p>Atribut <code>onclick</code> adalah salah satu atribut event yang ada di HTML, kode Javascript bisa
+                    ditulis di semua atribut event.</p>
+                <p>Ingat <strong>atribut event</strong>!</p>
+                <p>Bukan atribut biasa.</p>
+                <p>Jika kamu ingin lihat semua atribut event, silahkan cek di
+                    <a href=https://developer.mozilla.org/en-US/docs/Web/Events target=_blank>Event Reference
+                    </a>.
+                </p>
+                <p>
+                <div align="center"><figure class=mb-3><img alt="event reference" class="lazyload img-fluid" src="../image/event-reference.png">
+                </figure></div>
+                </p><p>Penulisan atribut event di HTML diawali dengan <code>on</code>, misalnya untuk event
+                    <code>click</code>, maka pada atribut HTML ditulis <code>onclick</code>.</p>
+                <p>Contoh lagi biar makin paham:</p>
+                <div class=highlight><pre
+                        style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                        class=language-html data-lang=html><span style=color:#ff79c6>&lt;!DOCTYPE html&gt;</span>
+    &lt;<span style=color:#ff79c6>html</span> <span style=color:#50fa7b>lang</span><span style=color:#ff79c6>=</span><span
+                            style=color:#f1fa8c>"en"</span>&gt;
+
+    &lt;<span style=color:#ff79c6>head</span>&gt;
+        &lt;<span style=color:#ff79c6>meta</span> <span style=color:#50fa7b>charset</span><span style=color:#ff79c6>=</span><span
+                            style=color:#f1fa8c>"UTF-8"</span>&gt;
+        &lt;<span style=color:#ff79c6>meta</span> <span style=color:#50fa7b>name</span><span
+                            style=color:#ff79c6>=</span><span style=color:#f1fa8c>"viewport"</span> <span
+                            style=color:#50fa7b>content</span><span style=color:#ff79c6>=</span><span style=color:#f1fa8c>"width=device-width, initial-scale=1.0"</span>&gt;
+        &lt;<span style=color:#ff79c6>title</span>&gt;Penulisan Javascript di Atriibut&lt;/<span
+                            style=color:#ff79c6>title</span>&gt;
+    &lt;/<span style=color:#ff79c6>head</span>&gt;
+
+    &lt;<span style=color:#ff79c6>body</span>&gt;
+    <span style=display:block;width:100%;background-color:#3d3f4a>    &lt;<span style=color:#ff79c6>textarea</span> <span
+            style=color:#50fa7b>onkeyup</span><span style=color:#ff79c6>=</span><span style=color:#f1fa8c>"document.getElementById(&#39;counter&#39;).innerText = this.value.length"</span> <span
+            style=color:#50fa7b>cols</span><span style=color:#ff79c6>=</span><span
+            style=color:#f1fa8c>"30"</span> <span style=color:#50fa7b>rows</span><span
+            style=color:#ff79c6>=</span><span style=color:#f1fa8c>"10"</span>&gt;&lt;/<span style=color:#ff79c6>textarea</span>&gt;
+    </span>    &lt;<span style=color:#ff79c6>p</span>&gt;Panjang: &lt;<span style=color:#ff79c6>span</span> <span
+                            style=color:#50fa7b>id</span><span style=color:#ff79c6>=</span><span style=color:#f1fa8c>"counter"</span>&gt;0&lt;/<span
+                            style=color:#ff79c6>span</span>&gt; karakter&lt;/<span style=color:#ff79c6>p</span>&gt;
+    &lt;/<span style=color:#ff79c6>body</span>&gt;
+
+    &lt;/<span style=color:#ff79c6>html</span>&gt;
+    </code></pre>
+                </div>
+                <p>Pada contoh ini, kita menggunakan event <code>keyup</code>, maka ditulis <code>onkeyup</code>. Event ini
+                    terjadi saat kita melepas tombol di keyboard.</p>
+                <p>Jadi nantinya saat kita mengetik pada elemen <code>&lt;textarea></code>, kode Javascript yang ada di
+                    <code>onkeyup</code> akan dieksekusi.</p>
+                <p>Kode Javascript tersebut berfungsi untuk menampilkan jumlah karakter yang diketik.</p>
+                <p>Hasilnya:</p>
+                <p>
+                        <div align="center">
+                    <video autoplay class="lazyload img-fluid mb-3" loop muted playsinline>
+                        <source src="../image/onkeyup.mp4" type=video/webm>
+                        <source src="../image/onkeyup.mp4" type=video/mp4>
+                    </video></div>
+            </p>
+            <h5 class="fw-bold mt-5 mb-3">4. Penulisan Javascript pada URL</h5>
+            <p>Nah ini yang menurut saya cara yang cukup aneh.</p>
+            <p>Cara ini memang jarang digunakan dan hampir tidak ada yang menggunakannya di dalam aplikasi.</p>
+            <p>Tapi tetap bisa.</p>
+            <p>Caranya, pada URL kita gunakan <code>javascript:</code> lalu diikuti dengan kode Javascript yang ingin
+                dieksekusi.</p>
+            <p>Contoh:</p>
+            <div class=highlight><pre
+                    style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                    class=language-html data-lang=html>javascript:alert("Nah! ini Javascript")
+</code></pre>
+            </div>
+            <p>Ini di ketik pada <em>address bar</em> browser.</p>
+            <p>Maka hasilnya:</p>
+            <p>
+            <div align="center"><figure class=mb-3><img alt="Pemanggilan Javascript pada URL" class="lazyload img-fluid" src="../image/Penulisan-Javascript-pada-URL.png"></figure></div>
+            </p>
+            <blockquote><p><strong>Catatan</strong>: Cara ini tidak bekerja di web browser versi terbaru, karena ini
+                merupakan sebuah celah yang bisa dipakai untuk serangan XSS.</p></blockquote>
+            <p>Lalu, bagaimana kita menggunakan cara ini di HTML?</p>
+            <p>Cara ini bisa kita gunakan pada tag <code>&lt;a></code>, lalu mengisinya di atribut <code>href</code>.
+            </p>
+            <p>Contoh:</p>
+            <div class=highlight><pre
+                    style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code
+                    class=language-html data-lang=html>&lt;<span style=color:#ff79c6>a</span> <span style=color:#50fa7b>href</span><span
+                    style=color:#ff79c6>=</span><span style=color:#f1fa8c>"javascript:alert(&#39;Wih! hebat bukan?&#39;)"</span>&gt;Coba Klik&lt;/<span
+                    style=color:#ff79c6>a</span>&gt;
+</code></pre>
+            </div>
+            <p>Hasilnya:</p>
+            <p>
+            <div align="center"><figure class=mb-3><img alt="javascript di url" class="lazyload img-fluid" src="../image/javascript-di-url.png"> </div>
+            </figure>
+            </p><p>Jadi saat link <code>&lt;a></code> diklik, ia akan membuka URL <code>javascript:</code> dan
+                menjalankan kode Javascript yang ada di sana.</p>
+            <p>Mirip seperti event <code>onclick</code> ya.</p>
+            <h5 class="fw-bold mt-5 mb-3">Akhir Kata..</h5>
+            <p>Nah, itulah 4 cara menulis Javascript di HTML.</p>
+            <p>Cara manakah yang akan kamu gunakan?</p>
+            <p>Menurut saya, cara pertama, kedua, dan ketiga cukup sering dan umum dipakai.</p>
+            <p>Sedangkan cara keempat, tidak saya rekomendasikan untuk digunakan, cukup diketahui saja hehehe.</p>
+            <p>Sekian, terimakasih sudah membaca sampai habis.</p>
+        </div>
+        <!-- akhir konten side kanan -->
+    </div>
+</div>
+<!-- akhir sidebar -->
+
+<script src="../bs5/js/bootstrap.bundle.js"></script>
+<script src="../js/style.js"></script>
+</body>
+</html>

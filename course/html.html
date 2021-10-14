@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- link bootrstrap -->
+    <link rel="stylesheet" href="../bs5/css/bootstrap.min.css"/>
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/all.css"/>
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>course html</title>
+</head>
+<body>
+<!-- membuat sidebar -->
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-transparent">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 sidebar">
+                <a href="../index.html" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <img src="../image/logoBrand.png" class="d-none d-sm-inline" alt="logoBrand" width="190" height="70"/> </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mt-5"
+                    id="menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link align-center px-0"> <i class="fas fa-home fs-3"></i>
+                            <span class="ms-1 d-none d-sm-inline">Home</span> </a>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-center"> <i
+                                class="fas fa-book fs-3"></i> <span class="ms-2 d-none d-sm-inline">Learning</span> </a>
+                    </li>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="#materi1" class="nav-link px-0"> <span class="d-none d-sm-inline">- HTML Batch </span>1</a>
+                            </li>
+                            <li>
+                                <a href="#materi2" class="nav-link px-0"> <span class="d-none d-sm-inline">- HTML Batch </span>2</a>
+                            </li>
+                            <li>
+                              <a href="#" onclick="alert3()" class="nav-link px-0"> <span class="d-none d-sm-inline">- HTML Batch </span>3</a>
+                          </li>
+                          <li>
+                            <a href="#" onclick="alert4()" class="nav-link px-0"> <span class="d-none d-sm-inline">- HTML Batch </span>4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link align-center px-0" href="../course/java.html"> <i class="fab fa-js-square fs-3"></i>
+                            <span class="ms-1 d-none d-sm-inline">JavaScript</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link align-center px-0" href="../course/java.html"> <i class="fab fa-java fs-3"></i>
+                            <span class="ms-1 d-none d-sm-inline">Java</span> </a>
+                    </li>
+                </ul>
+				<script>
+				function alert3 (){
+					alert("Maaf materi HTML Batch 3 saat ini belum tersedia. Terima kasih!");
+					}
+				function    alert4 (){
+					alert("Maaf materi HTML Batch 4 saat ini belum tersedia. Terima kasih!");
+					}
+				</script>
+                <hr/>
+            </div>
+        </div>
+
+        <!--  konten side kanan-->
+        <div class="col py-3 sidebar-kanan bg-transparent">
+            <h3 class="fw-bold mt-5 mb-3" id="materi1">Belajar HTML dari Nol: Pengenalan Dasar HTML untuk Pemula </h3>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-12">
+                    <div class="ratio ratio-16x9 ms-3 mb-3">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0kDQJODaNpY"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        <div class="content-course ms-3">
+            <p>HTML memang bahasa yang wajib banget untuk dipelajari, bagi temen-temen yang mau menjadi web developer.</p>
+            <p>Why???</p>
+            <p>Karena...</p>
+            <p>HTML merupakan bahasa paling dasar serta pengetahuan yang wajib banget temen-temen tau untuk bisa membuat sebuah web.</p>
+            <p>Saya yakin, temen-temen pasti sudah pernah mendengar HTML sebelumnya. Tapi tidak ada salahnya membaca kebali artikel ini untuk menggulas kembali pengetahuan umum ini.</p>
+            <p>Pada tutorial ini, kita akan benar-benar membahas dari nol hingga temen-temen bisa membuat sebuah halaman HTML sendiri.</p>
+            <p>wahh...</p>
+            <p>Baiklah !! tanpa basa basi lagi...</p>
+        </div>
+
+            <a class="btn-collapse px-3 py-2 rounded fw-bold" data-bs-toggle="collapse" href="#materi1-1" role="button" aria-expanded="false"
+               aria-controls="collapseExample">Mari kita mulai...</a>
+            <hr>
+            <div class="collapse" id="materi1-1">
+                <div class=" html1 ms-3">
+                    <h3 class="fw-bold mt-5 mb-3" id="apaitu">Apa itu HTML?</h3>
+                    <p>HTML atau <em>HyperText Markup Language</em> merupakan sebuah bahasa
+                    <a href=https://kbbi.web.id/markah target=_blank><em>markah</em><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10" aria-label="External Link" style="margin:0 .15rem"><polygon fill="#00ad9f" points="12 5.038 6.962 10.066 5.668 8.772 8.502 5.961 0 5.961 0 4.116 8.502 4.116 5.691 1.282 6.984 0" transform="rotate(-40 6 5.033)" /></svg></a> untuk membuat halaman web.</p>
+                    </p>
+                    <p>Paham kan maksudnya?</p>
+                    <p>Kalau belum paham, sini saya jelaskan…</p>
+                    <p>Jadi, HTML itu adalah <em><strong>sebuah bahasa</em></strong> yang menggunakan <em><strong>markup</em></strong> atau penanda untuk membuat <em><strong>halaman web</em></strong>.</p>
+                    <p>Penanda atau markup ini, nanti akan kita sebut dengan <em><strong>Tag.</strong></em></p>
+                    <p>HTML berperan untuk menentukan struktur konten dan tampilan dari sebuah web.</p>
+                    <p>Kalau kita ibaratkan nih..</p>
+                    <p>HTML itu seperti batu bata untuk membangun rumah. Batu bata ini dapat disusun, hingga menjadi fondasi dasar.</p>
+                    <div align="center">
+                      <figure class=mb-3><img class="lazyload img-fluid" src="../image/htmldasar.png"/></figure>
+                  </div>
+                    <p>Dalam membuat halaman web, HTML tidak sendirian. Ada bahasa lain lagi yang menjadi pelengkapnya, yakni CSS dan Javascript.</p>
+                    <p>CSS adalah bahasa khusus yang digunakan untuk memperindah tampilan web.</p>
+                    <p>Lalu Javascript bertugas untuk membuat halaman web menjadi hidup.</p>
+                    <p>Karena dengan Javascript, kita dapat menentukan fungsi-fungsi maupun efek yang akan diterapkan di website.</p>
+                    <p>Oke, saya anggap kamu sudah paham tentang apa itu HTML serta peranannya dalam pembuatan web.</p>
+                    <p>Berikutnya, biar lebih paham.. kita akan membahas sejarah dan asal-usul HTML.</p>
+                    <h5 class="fw-bold mt-5 mb-3" id="materi1">Sejarah dan Asal-usul HTML</h5>
+                    <p>Cerita awal kemunculan HTML dimulai dari tahun 1980..</p>
+                    <p>Saat itu seorang ilmuan bernama Tim Berners-Lee sedang bekerja di CERN.</p>
+                    <div align="center">
+                      <figure class=mb-3><img class="lazyload img-fluid" src="../image/Tim_Berners-Lee.jpg"/></figure>
+                  </div>
+                    <p>CERN sendiri bukanlah perusahaan yang berkaitan tentang teknologi maupun internet. CERN adalah singkatan dari bahasa prancis: <em>Européen pour la Recherche Nucléaire.</em> </p>
+                    <p>Yang artinya: Komisi Eropa untuk Penelitian Fisika Nuklir.</p>
+                    <div align="center">
+                      <figure class=mb-3><img class="lazyload img-fluid" src="../image/website-cern.png"/></figure>
+                  </div>
+                    <p>Para peneliti di CERN membutuhkan sebuah cara atau sistem agar bisa saling berbagi dokumen hasil penelitian.</p>
+                    <p>Tim kemudian mencoba membuat ENQUIRE. Ini adalah software hypertext yang akan digunakan untuk berbagi dokumen.</p>
+                    <p>Lalu di tahun 1989, Tim memperkenalkan ide tentang hypertext berbasis internet. Ini nantinya akan menjadi cikal-bakal HTML.</p>
+                    <p>Tim kemudian memulai proyek baru dengan rekannya Robert Cailliau yang merupakan system engineer di CERN. Akan tetapi proyek ini tidak resmi diadopsi oleh CERN.</p>
+                    <p>Pada akhir tahun 1991, Tim Berners-Lee menerbitkan dokumen yang berjudul: <a href=https://id.wikibooks.org/wiki/Pemrograman_HTML/Tag target=_blank><em>“HTML Tags”.</em><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10" aria-label="External Link" style="margin:0 .15rem"><polygon fill="#00ad9f" points="12 5.038 6.962 10.066 5.668 8.772 8.502 5.961 0 5.961 0 4.116 8.502 4.116 5.691 1.282 6.984 0" transform="rotate(-40 6 5.033)" /></svg></a></p>
+                    <p>Dokumen ini berisi penjelasan tentang 18 tags awal yang menjadi konsep dasar HTML.</p>
+                    <p>HTML sebenarnya dirancang berdasarkan pada konsep bahasa markup yang dikenal dengan SGML <em>(Standard Generalized Markup Language).</em></p>
+                    <p>SGML adalah sebauah standar internasional untuk membuat dokumen dengan tanda (markup) seperti paragraf, list, heading, dan lain-lain.</p>
+                    <p>Bisa dibilang..</p>
+                    <p>HTML adalah implementasi dari SGML</p>
+                    <p>Kalau kita lihat, beberapa tag seperti <code>&lt;title></code>, <code>&lt;p></code>, <code>&lt;li></code>, dan <code>&lt;h1></code>
+                      sampai <code>&lt;h6></code> berasal dari SGML. Namun, tidak semua yang ada di HTML berasal
+                      dari SGML.</p>
+                    <p>Salah satunya adalah <strong>Hyperlink</strong>, yang murni hasil pemikiran Tim Berners-Lee.</p>
+                    <p>Ide tentang HTML ini kemudian disebarkan ke dalam sebuah mailing list dan segera menjadi perhatian berbagai ilmuwan komputer di seluruh dunia.</p>
+                    <p><h5 class="fw-bold mt-5 mb-3">Perkembangan dan Versi HTML</h5></p>
+                    <p>HTML punya beberapa versi, dari versi yang paling tua hingga yang terbaru. Berikut ini perkembangan versi HTML:</p>
+                    <ul>
+                      <li><code>[Draft]</code> <strong>HTML 1.0</strong> <em>(Juni 1993)</em> adalah versi HTML pertama, namun tidak resmi dirilis.</li>
+                      <li><strong>HTML 2.0</strong> <em>(24 November 1995)</em> adalah versi HTML kedua yang resmi pertamakali beredar di pasaran dan dirilis oleh IETF.</li>
+                      <li><code>[Draft]</code> <strong>HTML 3.0</strong> <em>(28 Maret 1995)</em> versi ini gagal beredar, karena banyak perubahan yang memicu perdebatan.</li>
+                      <li><strong>HTML 3.2</strong> <em>(14 Januari 1997)</em> versi resmi yang dirilis W3C pertamakali.</li>
+                      <li><strong>HTML 4.0</strong> <em>(24 April 1998)</em> versi pengembangan dari yang sebelumnya.</li>
+                      <li><strong>HTML 4.01</strong> <em>(24 Desember 1999)</em> versi perbaikan dari HTML 4.0.</li>
+                      <li><strong>XHTML 1.0</strong> <em>(26 Januari 2000)</em> pengembangan dari HTML 4.01 dengan mengadopsi XML.</li>
+                      <li><strong>XHTML 2.0</strong> <em>(Augustus 2002&mdash;Juli 2006)</em> versi kedua dari XHTML.</li>
+                      <li><strong>HTML 5</strong> <em>(28 Oktober 2014)</em> versi html saat ini.</li>
+                    </ul>
+                    <p>Versi <code>&lt;Draft></code> adalah versi yang tidak resmi dirilis ke pasaran. Bentuknya cuma masih dalam draft speksifikasi saja.</p>
+                    <p>Artinya..</p>
+                    <p>Tidak ada yang menggunakan versi <code>&lt;Draft></code> untuk membuat web.</p>
+                    <p>Lalu, versi mana yang akan kita pakai?</p>
+                    <p>Tentunya versi terbaru, yakni HTML 5.</p>
+                    <p><h5 class="fw-bold mt-5 mb-3">Peralatan untuk Belajar HTML</h5></p>
+                    <p>Nah, sekarang.. Tiba saatnya kita praktik!</p>
+                    <p>Tapi sebelum itu, kamu harus siapkan beberapa alat yang akan digunakan untuk praktik.</p>
+                    <p>Adapun peralatan yang harus kamu persiapkan adalah:</p>
+                    <p><h6 class="fw-bold mt-5 mb-3">1. Teks Editor untuk Menulis HTML</h6></p>
+                    <p>Teks editor akan kita gunakan untuk menulis kode-kode HTML. Kamu bebas menggunakan teks editor apapun.</p>
+                    <p>Notepad boleh, Notepad++ juga boleh..</p>
+                    <div align="center">
+                      <figure class=mb-3><img class="lazyload img-fluid" src="../image/notepad.png"/></figure>
+                  </div>
+                    <p>Apapun teks editornya, yang penting bisa digunakan untuk membuat dan menulis dokumen HTML</p>
+                    <p>Namun, pada tutorial ini.. kita akan menggunakan teks editor <strong>Visual Studio Code.</strong></p>
+                    <p><h6 class="fw-bold mt-5 mb-3">2. Web Browser untuk Membuka HTML</h6></p>
+                    <p>Web browser akan kita gunakan untuk membuka HTML. Kamu juga bebeas menggunakan web browser apapun.</p>
+                    <p>
+                    <div align="center"><img class="lazyload img-fluid" src="../image/web-browser.png"></div>
+                    </p>
+                    <p>Saran saya sih.. gunakan web browser yang terbaru, karena kita juga akan menggunakan HTML versi yang terbaru.</p>
+                    <p>Firefox atau Google Chrome, saya kira sudah cukup.</p>
+                    <h5 class="fw-bold mt-5 mb-3">Membuat Dokumen HTML Pertamamu</h5>
+                    <p>Kini tiba saatnya, kamu harus mencoba sendiri membuat dokumen HTML. Caranya sangat mudah.</p>
+                    <p>Mari kita mulai dengan membuka teks editor, lalu tulislah kode berikut</p>
+                    <p>
+                    <div align="center">
+                        <img class="lazyload img-fluid" src="../image/kode1.png"></div>
+                    </p>
+                    <p>Setelah itu, simpan dengan nama <code>hello-world.html.</code></p>
+                    <p>
+                      <div align="center">
+                          <img class="lazyload img-fluid" src="../image/file-html.png"></div>
+                      </p>
+                    <p><strong>TIPS:</strong> buat kamu yang menggunakan Notepad di Windows, simpanlah nama filenya dengan menggunakan tanda petik <code>"hello-world.html"</code> agar ekstensinya <code>.html</code>, bukan <code>txt.</code></p>
+                    <p>Sekarang cobalah buka file hello-world.html dengan web browser.. maka hasilnya:</p>
+                    <p>
+                      <div align="center">
+                          <img class="lazyload img-fluid" src="../image/hello-world-html.png"></div>
+                      </p>
+                    <p>Selamat! 🎉</p>
+                    <p>Kita sudah berhasil membuat halaman web pertama dengan HTML.</p>
+                    <p>Kini giliran saya menjelaskan maksud dari kode di atas, tapi sebelum itu.. saya akan jelaskan dulu tentang nama file untuk HTML.</p>
+                    <h5 class="fw-bold mt-5 mb-3">Nama File untuk HTML</h5>
+                    <p>Ada beberapa hal yang perlu diperhatikan dalam membuat nama file HTML:</p>
+                    <h6 class="fw-bold mt-5 mb-3">1. Extensi file HTML</h6>
+                    <p>Setiap file HTML harus berekstensi <code>.html</code>, <code>.xhtml</code> (untuk XHTML), dan <code>.htm</code> saja. Jika tidak menggunakan ekstensi ini, maka ia tidak akan bisa dibaca oleh web browser.</p>
+                    <p>Contohnya seperti ini:</p>
+                    <p>Nama filenya adalah <code>hello-world.txt</code></p>
+                    <p>
+                      <div align="center">
+                          <img class="lazyload img-fluid" src="../image/file-txt.png"></div>
+                      </p>
+                    <p>Sedah jelas, ini bukan file HTML, melainkan sebuah file teks biasa. Maka.. browser akan menampilkan isi file tersebut apa adanya.</p>
+                    <h6 class="fw-bold mt-5 mb-3">2. Nama Khusus untuk Homepage</h6>
+                    <p>Jika kamu ingin membuat halaman untuk homepage, maka sebaiknya gunakan nama <code>index.html</code>. Karena ia akan otomatis dibuka saat website dikunjungi.</p>
+                    <p>Contohnya, saat kamu membuka www.kampusIT.com.. maka file HTML yang akan dibuka adalah <code>index.html</code> yang berada di server kampusIT.</p>
+                    <h6 class="fw-bold mt-5 mb-3">3. Hindari Beberapa Hal ini..</h6>
+                    <ul>
+                        <li>Penggunaan Spasi</li>
+                        <li>Jangan Alay!</li>
+                    </ul>
+                    <h5 class="fw-bold mt-5 mb-3">Apa Selanjutnya????</h5>
+                    <p>Nah, sampai di sini dulu tutorial pertama ini..</p>
+                    <P>Berikutnya silahkan pelajari tentang definisi tag, elemen, dan atribut:</P>
+                </div>
+            </div>
+        <div class="html2 ms-3">
+            <h3 class="fw-bold mt-5 mb-3" id="materi2">Belajar HTML #02: Apa itu Tag, Elemen,dalam HTML?</h3>
+            <p>
+                <div align="center">
+                    <img class="lazyload img-fluid" src="../image/tutorial-html-untuk-pemula.png"></div>
+                </p>
+            
+            <p>Tag, elemen, dan atribut merupakan tiga bagian penting yang ada di dalam HTML. Bagi kamu yang baru belajar HTML, wajib hukumnya untuk mengetahui ketiga Hal ini.</p>
+            <p>Apa itu Tag?</p>
+            <p>Apa itu Elemen?</p>
+            <p>Apa itu Atribut?</p>
+            <p>Serta apa perbedaan Tag, Elemen, dan Atribut?</p>
+            <a class="btn-collapse px-3 py-2 rounded fw-bold" data-bs-toggle="collapse" href="#materi2-1" role="button" aria-expanded="false"
+               aria-controls="collapseExample">Mari kita bahas...</a>
+        </div>
+            <div class="collapse ms-3" id="materi2-1">
+                <div class=" content-course">
+                    <h3 class="fw-bold mt-5 mb-3" id="apaitu">Apa itu Tag?</h3>
+                    <p>Tag adalah sebuah <strong>penanda awalan</strong> dan <srtong>akhiran</srtong> dari sebuah elemen di HTML. Tag dibuat dengan kurung siku <code>(<...>),</code> 
+                        lalu di dalamnya berisi nama tag dan kadang juga ditambahkan dengan atribut.</p>
+                    <p>Contoh:<code> < p >, < a >, < body >, < head >,</code> dan sebagainya..</p>
+                    <p>Tag selalu ditulis berpasangan. Ada tag pembuka dan ada tag penutupnya. Namun, ada juga beberapa tag yang tidak memiliki pasangan penutup. Tag penutup ditulis dengan menambahkan garis miring <code>(/)</code> di depan nama tag.</p>
+                    <p>
+                        <div align="center">
+                            <img class="lazyload img-fluid" src="../image/tag.png"></div>
+                        </p>
+                    <p>Setiap tag memiliki fungsi masing-masing. Ada yang digunakan untuk membuat judul, membuat link, membuat paragraf, heading, dan lain-lain.</p>
+                    <p>Masih ingat sejarah <strong>HTML</strong>?</p>
+                    <p>Dulu.. awalnya HTML cuma punya <strong>18</strong> tag. Sekarang HTML sudah punya sekitar <strong>250</strong> tag.</p>
+                    <p>Wah! banyak ya</p>
+                    <p>Apa semua tag ini harus kita hafal?</p>
+                    <p>Jawabannya:</p>
+                    <p><strong>Tidak harus</strong>, saja juga tidak bisa menghafal semanya. Cukup ketahui tag-tag dasar saja.</p>
+                    <p>Berikut ini daftar tag-tag dasar, yang menurut saya harus kamu ingat.</p>
+                    <table>
+                        <thead><tr><th>Tag</th><th>Fungsi</th></tr></thead><tbody>
+                            <tr><td><code>&lt;html></code></td><td>untuk memulai dokumen HTML</td></tr>
+                            <tr><td><code>&lt;head></code></td><td>untuk membuat bagian head</td></tr>
+                            <tr><td><code>&lt;body></code></td><td>untuk membuat bagian body</td></tr>
+                            <tr><td><code>&lt;h1></code> sampai <code>&lt;h6></code></td><td>untuk membuat heading pada artikel</td></tr>
+                            <tr><td><code>&lt;p></code></td><td>untuk membuat paragraf</td></tr>
+                            <tr><td><code>&lt;!-- --></code></td><td>untuk membuat komentar</td></tr></tbody></table>
+
+                    <p>Beberapa tag ini sudah kita coba pada tutorial pertama dan juga ada yang belum.</p>
+                    <p>Tenang saja.. Nanti juga saya akan perkenalkan tag-tag lain yang umum digunakan dalam pembuatan web.</p>
+                    <p>Untuk saat ini, cukup pahami: <strong><em>Apa itu tag dan cara menulisnya.</em></strong></p>
+
+                    <h5 class="fw-bold mt-5 mb-3">Cara Menulis Tag HTML yang Benar!</h5>
+                    <p>Beberapa orang kadang sering salah dalam menuliskan tag. Ada yang lupa menutup, ada yang salah mengetik namanya, dan semacamnya.</p>
+                    <p>Berikut ini beberapa saran yang perlu diikuti agar bisa menulis tag dengan benar:<p>
+                    <h6 class="fw-bold mt-5 mb-3">1. Tag-tag wajib</h6>
+                    <p>Ada beberapa tag yang wajib ada di HTML. Tag ini harus kamu tulis.. kalau tidak, bisa jadi kode HTML-mu akan error menurut validator W3C.</p>
+                    <p>Berikut ini daftar tag yang wajib ada di HTML:</p>
+                    <ul>
+                        <li><code>&lt;!DOCTYPE html></code> &mdash; untuk deklarasi type dokumen;</li>
+                        <li><code>&lt;html></code> &mdash; tag utama dalam HTML;</li>
+                        <li><code>&lt;head></code> &mdash; untuk bagian kepala dari dokumen;</li>
+                        <li><code>&lt;title></code> &mdash; untuk judul web;</li>
+                        <li><code>&lt;body></code> &mdash; untuk bagian body dari dokumen.</li>
+                    </ul>
+                    <h6 class="fw-bold mt-5 mb-3">2. Gunakan Huruf Kecil</h6>
+                    <p>Hindari menggunakan huruf besar dalam menuliskan naama tag dan sebaiknya gunakan huruf kecil saja.</p>
+                    <p>Huruf kecil lebih gampang diketik dan juga akan membuat kode HTML terlihat lebih bersih dan rapi.</p>
+                    <p>Contoh: (bagus)</p>
+                    <div class=highlight><pre style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+                        <code class=language-html data-lang=html>&lt;<span style=color:#ff79c6>body</span>&gt;
+                        &lt;<span style=color:#ff79c6>p</span>&gt;Belajar tentang tag di HTML&lt;/<span style=color:#ff79c6>p</span>&gt;
+                        &lt;/<span style=color:#ff79c6>body</span>&gt; 
+                        </code></pre>
+                    </div>
+                    <p>Contoh: (buruk)</p>
+                    <div class=highlight><pre style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+                        <code class=language-html data-lang=html>&lt;<span style=color:#ff79c6>BODY</span>&gt;
+                        &lt;<span style=color:#ff79c6>P</span>&gt;BELAJAR TENTANG TAG HTML&lt;/<span style=color:#ff79c6>P</span>&gt;
+                        &lt;/<span style=color:#ff79c6>BODY</span>&gt; 
+                        </code></pre>
+                    </div>
+                    <p>Tapi khusus untuk tag <code>< !DOCTYPE html >..</code> ia ditulis dengan huruf besar. Sebenarnya bisa juga dengan huruf kecil dan akan valid menurut validator W3C.</p>
+                    <p>Tapi untuk dokumen XHTML, menggunakan <code>DOCTYPE</code> dengan huruf kecil akan mengakibatkan error.</p>
+                    <h6 class="fw-bold mt-5 mb-3">3. Pastikan Menutup Tag dengan Benar</h6>
+                    <p>Tag HTML nantinya akan ditulis bertumpuk-tumpuk. Artinya, di dalam tag ada tag lagi. Kadang kita sering salah dalam menutup tag yang bertumpuk ini. Akibatnya, kode HTML kita tidak valid.</p>
+                    <p>Tag yang pertama dibuat, harus ditutup terakhir. Bukan ditutup pertama.</p>
+                    <p>Contoh:</p>
+                    <div class=highlight><pre style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#ff79c6>i</span>&gt;&lt;<span style=color:#ff79c6>b</span>&gt;&lt;<span style=color:#ff79c6>u</span>&gt;memasak&lt;/<span style=color:#ff79c6>u</span>&gt;&lt;/<span style=color:#ff79c6>b</span>&gt;&lt;/<span style=color:#ff79c6>i</span>&gt;
+                    </code></pre></div>
+                    <p>Tag <code>&lt;i></code> ditutup terakhir, karena ia yang ditulis pertama. Lalu tag <code>&lt;/u></code>
+                        ditutup pertama kali karena ia berada di dalam tag <code>&lt;b></code> dan <code>&lt;i></code>.</p>
+                        <h5 class="fw-bold mt-5 mb-3">Apa itu Elemen?</h5>
+                        <p>Elemen dalam HTML adalah sebuah komponen yang menyusun dokumen HTML. Elemen kadang juga disebut sebagai node, 
+                            karena ia merupakan salah satu jenis node yang menyusun dokumen HTML dalam diagram HTML tree.</p>  
+                    <p>
+                    <div align="center">
+                        <figure class="mb-3 figure border p-1 rounded-0"><img class="lazyload img-fluid"
+                                                                              src="../image/pohon-html.gif"
+                                                                              alt="HTML Tree (sumber: w3schools.com)"
+                                                                              title="HTML Tree (sumber: w3schools.com)">
+                            <figcaption class="figure-caption text-center my-2">HTML Tree (sumber: w3schools.com)
+                            </figcaption>
+                        </figure>
+                    </div>
+                    </p>
+                    <p>Pada diagram tersebut, terdapat tiga macam node.. yakni: <strong>elemen, Node atribut,</strong> dan <strong>node teks.</strong></p>
+                    <p>Elemen dibentuk dari <strong>tag pembuka,isi tag dan tag penutup</strong>. Kadang juga ditambahkan beberapa <strong>atribut</strong></p>
+                    <p>Contoh:</p>
+                    <p>
+                        <div align="center">
+                            <img class="lazyload img-fluid" src="../image/element.png"></div>
+                        </p>
+                    
+                    <p>Pada contoh di atas, terdapat satu elemen <code>< p > </code> dengan <code>atribut align="center" </code>dan memiliki isi berupa teks, yakni <code>Hello World!</code></p>
+                    <p>Elemen tidak selalu berisi teks, kadan ia juga akan berisi elemen lain. Ini biasanya kita sebut dengan <em>nested element</em> atau elemen di dalam elemen.</p>
+                    <p>Bila digambarkan dalam bentuk kotak persegi, maka akan terlihat seperti ini:</p>
+                    <p>
+                    <div align="center">
+                        <figure class=mb-3><img class="lazyload img-fluid" src="../image/element-html.png" alt=element-html.png>
+                        </figure>
+                    </div>
+                    </p>
+                    <p>Elemen HTML ada banyak jenisnya. Ada elemen khusus untuk teks, ada elemen untuk multimedia, script, tabel, metadata, dll. Nanti kita akan pelajari ini secara bertahap. 
+                        Semua jenis elemen HTML bisa kamu baca di sini: <em>HTML elements reference</em></p>
+                    <p>Beberapa elemen HTML kadang ditambahkan atribut sebagai pelengkap.</p>
+                    <h5 class="fw-bold mt-5 mb-3">Apa Selanjutnya?</h5>
+                    <p>Nah, selanjutnya kita akan berkenalan dengan elemen-elemen dasar di HTML seperti paragraf, heading, list, tabel, link, form, dan lain-lain.
+                    </p>
+
+                </div>
+            </div>
+            <!-- akhir konten side kanan -->
+        </div>
+    </div>
+    <!-- akhir sidebar -->
+
+    <script src="../bs5/js/bootstrap.bundle.js"></script>
+    <script src="../js/style.js"></script>
+</body>
+</html>
